@@ -1,4 +1,4 @@
-const { Todo } = require('../models/todoModel');
+const Todo = require('../models/todoModel'); //it's important that this isn't wrapped in {}
 
 exports.getTodos =  async (ctx) => {
   try {
