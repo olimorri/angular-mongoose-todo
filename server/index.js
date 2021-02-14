@@ -11,7 +11,8 @@ app.use(bodyParser());
 //TODO: enable this once router is sorted app.use(router.routes());
 
 app.listen(port, () => {
-  //TODO: mongoose.connect()
+  mongoose.connect(`mongodb://localhost:27017/angular-mongoose-todo`,{useNewUrlParser: true, useUnifiedTopology: true})
+  console.log(`Connected to db 🗄`)
   console.log(`Server up and running at http://localhost:${port} 🚀🧨`); 
 })
 
