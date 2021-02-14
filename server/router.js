@@ -4,3 +4,5 @@ const { getTodos, postTodo } = require('./controllers/todoController');
 
 router.get('/todo', getTodos);
 router.post('/todo', postTodo);
+
+module.exports = router;
