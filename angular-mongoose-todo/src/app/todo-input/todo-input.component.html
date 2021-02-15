@@ -1,2 +1,2 @@
-<input type="text">
-<span><button type="submit">Submit</button></span>
+<input type="text" #newTodo>
+<span><button type="submit" (click)="addNewTodo(newTodo.value)">Submit</button></span>
